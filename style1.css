@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2;
+    background-color: #000066;
+    color: white;
+    animation: fadeIn 0.5s ease-in;
+    font-size: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* NAVBAR */
+
+.navbar {
+    background: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 100px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 70px;
+}
+/*about*/
+.about{
+font-size:60px;
+margin: 2;
+}
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    gap: 20px;
+    padding: 60px;
+    font-size: 60px;
+}
+
+.project-card {
+    background: #330066;
+    padding: 10px;
+    flex: 1;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translate(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about img {
+      justify-content: center;
+      text-align: center;
+      width: 50%;
+      height: 50%;
+      border-radius: 30px;
+      
+      
+      
+     
+    }
+.nav ul li a:hover {
+    color: pink;
+}
+.project-card:hover {
+    transform: scale(0.05);
+}
+.project-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+    transform: scale(0.05);
+}
+
+}
+
+.about img.zoomed{
+    transform: scale(1.8);
+    z-index: 9;
+}
